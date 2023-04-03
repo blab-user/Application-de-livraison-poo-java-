@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="373.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applivreur.model.addnewController">
+   <children>
+      <TextField fx:id="nameFild" layoutX="152.0" layoutY="62.0" onAction="#nameFild" promptText="Ref-command" />
+      <TextField fx:id="phoneFild" layoutX="152.0" layoutY="100.0" onAction="#phoneFild" promptText="Ref-Phone" />
+      <TextField fx:id="emailFild" layoutX="152.0" layoutY="139.0" onAction="#emailFild" promptText="Ref-mail" />
+      <TextField fx:id="productsFild" layoutX="152.0" layoutY="180.0" onAction="#productsFild" promptText="Ref-products-ask" />
+      <TextField fx:id="deliveryFild" layoutX="152.0" layoutY="221.0" onAction="#deliveryFild" promptText="Ref-Send-Delivery" />
+      <Button fx:id="saveBtn" layoutX="202.0" layoutY="319.0" mnemonicParsing="false" onAction="#fieldsaveBtn" prefHeight="20.0" prefWidth="55.0" style="-fx-background-color: #009FFF;" text="Send">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.051600001752376556" green="0.8600000143051147" blue="0.12688107788562775" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <VBox prefHeight="53.0" prefWidth="403.0" style="-fx-background-color: #00A6FF;">
+         <children>
+            <Label text="Order Refernce">
+               <opaqueInsets>
+                  <Insets left="40.0" />
+               </opaqueInsets>
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets left="120.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="84.0" layoutY="66.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="84.0" layoutY="102.0" text="Phone">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="87.0" layoutY="142.0" text="Email">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="184.0" text="Products">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label layoutX="82.0" layoutY="224.0" text="Delivery">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <VBox layoutY="51.0" prefHeight="328.0" prefWidth="77.0" style="-fx-background-color: #3BB4C4;" />
+      <HBox layoutX="77.0" layoutY="355.0" prefHeight="24.0" prefWidth="326.0" style="-fx-background-color: #3BB4C4;" />
+      <TextField fx:id="adressFild" layoutX="153.0" layoutY="259.0" onAction="#adressFild" promptText="Ref-Send-Delivery" />
+      <Label layoutX="83.0" layoutY="259.0" text="Adress">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font></Label>
+      <Label fx:id="labelFild" alignment="CENTER" layoutX="120.0" layoutY="292.0" prefHeight="20.0" prefWidth="219.0" textFill="#27ff0b">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </children>
+</AnchorPane>
