@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="334.0" style="-fx-background-color: #AABBFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applivreur.model.LoginHomeController">
+   <children>
+      <Pane prefHeight="37.0" prefWidth="334.0">
+         <children>
+            <Label fx:id="ErrorPassword" contentDisplay="CENTER" layoutX="37.0" layoutY="-1.0" prefHeight="37.0" prefWidth="284.0" textAlignment="CENTER" textFill="#0eb211">
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+               <padding>
+                  <Insets left="100.0" top="-5.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <HBox prefHeight="34.0" prefWidth="334.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="315.0" text="CONNECTION OF ADMINISTRATEUR">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="56.0" prefWidth="334.0">
+         <children>
+            <Pane prefHeight="56.0" prefWidth="71.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="25.0" text="USER">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <TextField fx:id="nameuser" prefHeight="24.0" prefWidth="222.0" promptText="User-Name">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="54.0" prefWidth="334.0">
+         <children>
+            <Pane prefHeight="54.0" prefWidth="75.0">
+               <children>
+                  <Label layoutX="28.0" layoutY="19.0" text="LOGIN">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <TextField fx:id="passuser" prefHeight="22.0" prefWidth="225.0" promptText="*********">
+               <HBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="334.0">
+         <children>
+            <Pane prefHeight="46.0" prefWidth="335.0">
+               <children>
+                  <Button fx:id="connectuser" layoutX="90.0" layoutY="11.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="70.0" text="Connect">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="resetuser" layoutX="204.0" layoutY="11.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="87.0" text="Quick-App">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                  </Button>
+                  <Label fx:id="answer" layoutX="15.0" layoutY="15.0" prefHeight="20.0" prefWidth="70.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

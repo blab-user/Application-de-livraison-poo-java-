@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.applivreur.GestionProductsDelivery">
+   <children>
+      <TextField fx:id="fxquantity" layoutX="238.0" layoutY="106.0" prefHeight="24.0" prefWidth="284.0" promptText="Add Quantity" />
+      <TextField fx:id="fxprice" layoutX="237.0" layoutY="156.0" prefHeight="24.0" prefWidth="284.0" promptText="Add price of Produicts" />
+      <TextField fx:id="fxname" layoutX="237.0" layoutY="206.0" prefHeight="24.0" prefWidth="284.0" promptText="Try Name of Products" />
+      <Button layoutX="347.0" layoutY="283.0" mnemonicParsing="false" onAction="#addProduct" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Pane layoutY="-5.0" prefHeight="74.0" prefWidth="601.0" style="-fx-background-color: #00a6ff;">
+         <children>
+            <Label layoutX="181.0" layoutY="20.0" prefHeight="35.0" prefWidth="240.0" text="Add Products">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.6388888888888888" centerY="0.8047619047619048" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.42105263471603394" green="0.12865497171878815" blue="0.12865497171878815" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.41999998688697815" green="0.13019999861717224" blue="0.13019999861717224" opacity="0.6091954112052917" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="69.0" prefHeight="340.0" prefWidth="216.0" style="-fx-background-color: #3BB4C4;">
+         <children>
+            <Label layoutX="138.0" layoutY="40.0" text="Quatity">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="154.0" layoutY="99.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="149.0" layoutY="156.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="209.0" layoutY="385.0" prefHeight="24.0" prefWidth="391.0" style="-fx-background-color: #3BB4C4;" />
+      <Label fx:id="fxLabelAddProduct" layoutX="261.0" layoutY="340.0" prefHeight="24.0" prefWidth="339.0" text="                          " textAlignment="CENTER" textFill="#35eb2f">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+   </children>
+</AnchorPane>
